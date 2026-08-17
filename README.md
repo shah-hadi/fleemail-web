@@ -43,6 +43,11 @@ This public repository contains the browser interface. It communicates with the 
 
 Incoming message HTML is sanitized before it is rendered. Do not commit mailbox credentials, API secrets, or private server configuration to this frontend repository.
 
+## Project documentation
+
+- [Contributing guide](CONTRIBUTING.md) — local workflow, testing checklist, and pull-request expectations
+- [Security policy](SECURITY.md) — private reporting and frontend security boundaries
+
 ## License
 
 Released under the [MIT License](LICENSE).
