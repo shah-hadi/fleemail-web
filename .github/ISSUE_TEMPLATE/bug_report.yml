@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible Fleemail Web problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open...
+        2. Enter...
+        3. Observe...
+    validations:
+      required: true
+  - type: dropdown
+    id: viewport
+    attributes:
+      label: Viewport
+      options: [Desktop, Tablet, Mobile]
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, recording, or sanitized console output
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I removed email content, mailbox credentials, and private data.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
