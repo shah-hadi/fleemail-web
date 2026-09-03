@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose an improvement to Fleemail Web
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow
+      description: What inbox task should become faster, clearer, or safer?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Mobile and accessibility considerations
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
