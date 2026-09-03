@@ -1,10 +1,33 @@
+<div align="center">
+
 # Fleemail Web
+
+**Temporary inboxes with a fast, calm, and security-conscious interface.**
+
+![HTML](https://img.shields.io/badge/HTML-Semantic-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-Responsive-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=111)
+![SSE](https://img.shields.io/badge/Updates-Server--Sent_Events-7c3aed)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
 
 A clean, responsive frontend for temporary inboxes. Fleemail lets users open an address, read incoming messages, save frequently used inboxes, and switch comfortably between desktop and mobile layouts.
 
-**[Open the live app](https://fleemail.netlify.app)**
+[**Open the live application →**](https://fleemail.netlify.app)
 
-![Fleemail interface](assets/preview.webp)
+</div>
+
+![Fleemail responsive inbox interface](assets/preview.webp)
+
+## Experience at a glance
+
+| Area | Experience |
+| --- | --- |
+| **Inbox** | Open any supported temporary address and follow incoming mail live |
+| **Reading** | View complete messages in a focused reading surface |
+| **Safety** | Sanitize incoming HTML with DOMPurify before rendering |
+| **Continuity** | Save frequently used inboxes locally in the browser |
+| **Responsive UI** | Move comfortably between desktop and mobile navigation |
+| **Accessibility** | Use keyboard-friendly controls and semantic page structure |
 
 ## Features
 
@@ -15,6 +38,16 @@ A clean, responsive frontend for temporary inboxes. Fleemail lets users open an 
 - Saved inboxes stored locally in the browser
 - Responsive desktop and mobile navigation
 - Keyboard-friendly interactions
+
+## Data flow
+
+```text
+Temporary mailbox service
+        ↓ HTTPS + live events
+Fleemail browser client
+        ↓ sanitize untrusted message HTML
+Safe inbox and message reader
+```
 
 ## Built with
 
